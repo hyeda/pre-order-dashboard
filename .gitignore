@@ -16,6 +16,13 @@
 # next.js
 /.next/
 /out/
+.idea
+
+# Claude
+.claude/
+CHECKLIST.md
+CLAUDE.md
+note.md
 
 # production
 /build
