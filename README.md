@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# (주)디저트무역 · 선주문 관리 시스템
 
-## Getting Started
+카다이프 선주문 물류팀 관리자 대시보드
 
-First, run the development server:
+## 실행
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 기술 스택
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js 16 + TypeScript
+- TailwindCSS v4
+- recharts, lucide-react, sonner
 
-## Learn More
+## 주요 기능
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **검역 상태 패널** — 관세청 API 자동 수신 (합격/불합격), 부분합격 시 물류팀장 직접 수량 입력
+- **주문 현황** — 실시간 선주문 수 + 달성률 바 + 임계점 토스트 알림 (80/90/95/100%)
+- **수익 및 비용** — 예약금 총액 / 환불 예상액 / 쿠폰 비용 / 잔금 수령 예상
+- **판매 한도 슬라이더** — 현재 주문 수 미만 설정 불가
+- **긴급 판매 중단** — 헤더 상시 접근, 2단계 확인 (오발동 방지)
+- **주문 유입 그래프** — 12시간 주문 속도 모니터링, 급증 감지용
